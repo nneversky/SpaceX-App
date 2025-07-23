@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__text {
+  transform: translateY(-70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  transform: translateY(-30px);
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.text__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  width: 250px;
+}
+
+.image__no-poster {
+  transform: translateY(-13px);
+}
+
+.card__button {
+  transform: translateY(-30px);
+  width: 100%;
+}
+
+.text__description {
+  font-size: 18px;
+  color: rgb(120, 120, 120);
+}
