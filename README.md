@@ -14,6 +14,8 @@ React with TypeScript
 Mantine UI component library
 React StrictMode for strict controls
 
+<img width="1056" height="806" alt="image" src="https://github.com/user-attachments/assets/bcdbeb18-432e-40eb-b4a3-44a631a529d6" />
+
 #### Modal Window:
 Implemented using Portal (without Mantine's built-in solutions)
 Open/close animations
