@@ -9,14 +9,14 @@ interface ModalProps extends CardItem {
   onClick: () => void;
 }
 
-const modalElement = document.getElementById("modal");
 const Modal = (props: ModalProps) => {
   const { mission_patch, mission_name, rocket_name, details, onClick } = props;
-
+  const modalElement = document.getElementById("modal");
   if (!modalElement) return null;
+
   return createPortal(
     <>
-      <section className="modal">
+      <section className="modal" data-testid="modal">
         <div className="modal__header">
           <h3>{mission_name}</h3>
           <div className="modal__button-close">
@@ -24,7 +24,7 @@ const Modal = (props: ModalProps) => {
               onClick={() => {
                 onClick();
               }}
-              style={{}}
+              data-testid="close-button"
               src={IconClose}
             />
           </div>
@@ -46,7 +46,7 @@ const Modal = (props: ModalProps) => {
           </div>
           <div className="description__text">
             <h4>Details:</h4>
-            <span>{details ?? 'No information about launch'}</span>
+            <span>{details ?? "No information about launch"}</span>
           </div>
         </div>
       </section>
@@ -55,6 +55,7 @@ const Modal = (props: ModalProps) => {
           onClick();
         }}
         className="background__modal"
+        data-testid="background__modal"
       ></div>
     </>,
     modalElement

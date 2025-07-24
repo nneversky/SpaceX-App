@@ -38,6 +38,7 @@ const GetPoster = ({ patch }: PatchProps) => {
 };
 
 const Card = ({ data }: CardProps) => {
+  console.log(data)
   const { mission_patch_small, mission_name, rocket_name } = data;
   const [state, dispatch] = useReducer(reducer, initialState);
 
