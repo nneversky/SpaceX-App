@@ -1,10 +1,11 @@
 ## SpaceX Launches 2020 - React TypeScript App
+
+### Link on Vercel: https://space-x-app-xi.vercel.app/
+
 ### Project Description
 This application displays a list of SpaceX launches from 2020 with the ability to view additional details about each launch.
 
 <img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/9e68e906-60ec-4818-9847-0457a294201d" />
-
-### Link on Vercel: https://space-x-app-xi.vercel.app/
 
 ### Key Features
 #### Technology Stack:
